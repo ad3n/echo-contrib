@@ -1,6 +1,6 @@
 # Echo Community Contribution middlewares
 
- [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/ad3n/echo-contrib)
+ [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/ad3n/echo-contrib/v5)
  [![Codecov](https://img.shields.io/codecov/c/github/labstack/echo-contrib.svg?style=flat-square)](https://codecov.io/gh/labstack/echo-contrib)
  [![Twitter](https://img.shields.io/badge/twitter-@labstack-55acee.svg?style=flat-square)](https://twitter.com/labstack)
 
@@ -17,12 +17,12 @@
 
 For use with [`github.com/ad3n/echo/v5`](https://github.com/ad3n/echo):
 ```bash
-go get github.com/ad3n/echo-contrib
+go get github.com/ad3n/echo-contrib/v5
 ```
 
 ## Versioning
 
-This fork uses the module path `github.com/ad3n/echo-contrib` without a major-version suffix
+This fork uses the module path `github.com/ad3n/echo-contrib/v5`
 and depends on `github.com/ad3n/echo/v5`. The exact Echo version is pinned in `go.mod`.
 
 # Supported Go version

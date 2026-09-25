@@ -8,7 +8,7 @@ package main
 import (
 	"log/slog"
 
-	"github.com/ad3n/echo-contrib/echoprometheus"
+	"github.com/ad3n/echo-contrib/v5/echoprometheus"
 	"github.com/ad3n/echo/v5"
 )
 

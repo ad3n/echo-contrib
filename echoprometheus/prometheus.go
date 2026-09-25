@@ -21,7 +21,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/ad3n/echo-contrib/internal/helpers"
+	"github.com/ad3n/echo-contrib/v5/internal/helpers"
 	"github.com/ad3n/echo/v5"
 	"github.com/ad3n/echo/v5/middleware"
 	"github.com/prometheus/client_golang/prometheus"

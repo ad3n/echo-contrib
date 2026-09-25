@@ -9,7 +9,7 @@ Example:
 package main
 import (
 
-	"github.com/ad3n/echo-contrib/jaegertracing"
+	"github.com/ad3n/echo-contrib/v5/jaegertracing"
 	"github.com/ad3n/echo/v5"
 
 )
@@ -40,7 +40,7 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/ad3n/echo-contrib/internal/helpers"
+	"github.com/ad3n/echo-contrib/v5/internal/helpers"
 	"github.com/ad3n/echo/v5"
 	"github.com/ad3n/echo/v5/middleware"
 	"github.com/opentracing/opentracing-go"

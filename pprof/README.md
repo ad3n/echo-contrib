@@ -6,7 +6,7 @@ package main
 import (
 	"log/slog"
 
-	"github.com/ad3n/echo-contrib/pprof"
+	"github.com/ad3n/echo-contrib/v5/pprof"
 	"github.com/ad3n/echo/v5"
 )
 

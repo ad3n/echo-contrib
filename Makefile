@@ -1,4 +1,4 @@
-PKG := "github.com/ad3n/echo-contrib"
+PKG := "github.com/ad3n/echo-contrib/v5"
 PKG_LIST := $(shell go list ${PKG}/...)
 
 .DEFAULT_GOAL := check

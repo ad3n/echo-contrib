@@ -17,7 +17,7 @@ import (
 	"log/slog"
 	"net/http"
 
-	"github.com/ad3n/echo-contrib/zipkintracing"
+	"github.com/ad3n/echo-contrib/v5/zipkintracing"
 	"github.com/ad3n/echo/v5"
 	"github.com/openzipkin/zipkin-go"
 	zipkinhttp "github.com/openzipkin/zipkin-go/middleware/http"
@@ -66,7 +66,7 @@ import (
 	"net/http/httputil"
 	"net/url"
 
-	"github.com/ad3n/echo-contrib/zipkintracing"
+	"github.com/ad3n/echo-contrib/v5/zipkintracing"
 	"github.com/ad3n/echo/v5"
 	"github.com/openzipkin/zipkin-go"
 	zipkinHttpReporter "github.com/openzipkin/zipkin-go/reporter/http"
@@ -108,7 +108,7 @@ To trace function calls e.g. to trace `s3Func`
 package main
 
 import (
-	"github.com/ad3n/echo-contrib/zipkintracing"
+	"github.com/ad3n/echo-contrib/v5/zipkintracing"
 	"github.com/ad3n/echo/v5"
 	"github.com/openzipkin/zipkin-go"
 )
@@ -125,7 +125,7 @@ func s3Func(c *echo.Context, tracer *zipkin.Tracer) {
 package main
 
 import (
-	"github.com/ad3n/echo-contrib/zipkintracing"
+	"github.com/ad3n/echo-contrib/v5/zipkintracing"
 	"github.com/ad3n/echo/v5"
 	"github.com/openzipkin/zipkin-go"
 )

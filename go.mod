@@ -1,4 +1,4 @@
-module github.com/ad3n/echo-contrib
+module github.com/ad3n/echo-contrib/v5
 
 go 1.25.0
 

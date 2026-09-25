@@ -1,7 +1,7 @@
 github.com/HdrHistogram/hdrhistogram-go v1.2.0 h1:XMJkDWuz6bM9Fzy7zORuVFKH7ZJY41G2q8KWhVGkNiY=
 github.com/HdrHistogram/hdrhistogram-go v1.2.0/go.mod h1:CiIeGiHSd06zjX+FypuEJ5EQ07KKtxZ+8J6hszwVQig=
-github.com/ad3n/echo v0.0.0-20260925022203-8897f09dfd48 h1:d9gRxTSzQItrHvwzjlW1/07SRmLRshp+elWxK1XcX0U=
-github.com/ad3n/echo v0.0.0-20260925022203-8897f09dfd48/go.mod h1:FK6tJBRrEvvKVI2ZmkQTbX/N1KHt6iIa1UPjPUW+uNg=
+github.com/ad3n/echo/v5 v5.0.1 h1:ob0gwrPaI7egaiZ/RuLe7i/6pQbIwQjp5SyIzNH3TjE=
+github.com/ad3n/echo/v5 v5.0.1/go.mod h1:MeHD6nEFnk9wrv1f2Ftx/e3aQt0AjL7bou5P50FqEzM=
 github.com/beorn7/perks v1.0.1 h1:VlbKKnNfV8bJzeqoa4cOKqO6bYr3WgKZxO8Z16+hsOM=
 github.com/beorn7/perks v1.0.1/go.mod h1:G2ZrVWU2WbWT9wwq4/hrbKbnv/1ERSJQ0ibhJ6rlkpw=
 github.com/bmatcuk/doublestar/v4 v4.6.1/go.mod h1:xBQ8jztBU6kakFMg+8WGxn0c6z1fTSPVIjEY1Wr7jzc=

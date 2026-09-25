@@ -3,7 +3,7 @@ module github.com/ad3n/echo-contrib/v5
 go 1.25.0
 
 require (
-	github.com/ad3n/echo/v5 v5.0.0
+	github.com/ad3n/echo/v5 v5.0.1
 	github.com/casbin/casbin/v2 v2.135.0
 	github.com/gorilla/sessions v1.4.0
 	github.com/opentracing/opentracing-go v1.2.0

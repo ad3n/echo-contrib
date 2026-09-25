@@ -7,8 +7,8 @@ import (
 	"log/slog"
 
 	"github.com/casbin/casbin/v2"
-	casbin_mw "github.com/labstack/echo-contrib/v5/casbin"
-	"github.com/labstack/echo/v5"
+	casbin_mw "github.com/ad3n/echo-contrib/casbin"
+	"github.com/ad3n/echo/v5"
 )
 
 func main() {
@@ -36,8 +36,8 @@ import (
 	"log/slog"
 
 	"github.com/casbin/casbin/v2"
-	casbin_mw "github.com/labstack/echo-contrib/v5/casbin"
-	"github.com/labstack/echo/v5"
+	casbin_mw "github.com/ad3n/echo-contrib/casbin"
+	"github.com/ad3n/echo/v5"
 )
 
 func main() {

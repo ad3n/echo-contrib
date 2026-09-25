@@ -6,8 +6,8 @@ package main
 import (
 	"log/slog"
 
-	"github.com/labstack/echo-contrib/v5/pprof"
-	"github.com/labstack/echo/v5"
+	"github.com/ad3n/echo-contrib/pprof"
+	"github.com/ad3n/echo/v5"
 )
 
 func main() {

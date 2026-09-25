@@ -9,8 +9,8 @@ Simple example:
 
 	import (
 		"github.com/casbin/casbin/v2"
-		"github.com/labstack/echo/v5"
-		casbin_mw "github.com/labstack/echo-contrib/v5/casbin"
+		"github.com/ad3n/echo/v5"
+		casbin_mw "github.com/ad3n/echo-contrib/casbin"
 	)
 
 	func main() {
@@ -28,8 +28,8 @@ Advanced example:
 
 	import (
 		"github.com/casbin/casbin/v2"
-		"github.com/labstack/echo/v5"
-		casbin_mw "github.com/labstack/echo-contrib/v5/casbin"
+		"github.com/ad3n/echo/v5"
+		casbin_mw "github.com/ad3n/echo-contrib/casbin"
 	)
 
 	func main() {
@@ -51,9 +51,9 @@ import (
 	"errors"
 	"net/http"
 
+	"github.com/ad3n/echo/v5"
+	"github.com/ad3n/echo/v5/middleware"
 	"github.com/casbin/casbin/v2"
-	"github.com/labstack/echo/v5"
-	"github.com/labstack/echo/v5/middleware"
 )
 
 type (

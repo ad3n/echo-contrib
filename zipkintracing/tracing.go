@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/labstack/echo/v5/middleware"
+	"github.com/ad3n/echo/v5/middleware"
 
-	"github.com/labstack/echo/v5"
+	"github.com/ad3n/echo/v5"
 	"github.com/openzipkin/zipkin-go"
 	zipkinhttp "github.com/openzipkin/zipkin-go/middleware/http"
 	"github.com/openzipkin/zipkin-go/model"

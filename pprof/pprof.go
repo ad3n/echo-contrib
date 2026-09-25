@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"net/http/pprof"
 
-	"github.com/labstack/echo/v5"
+	"github.com/ad3n/echo/v5"
 )
 
 const (

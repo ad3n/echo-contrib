@@ -12,22 +12,26 @@ import (
 type responseDumper struct {
 	http.ResponseWriter
 
-	mw  io.Writer
-	buf *bytes.Buffer
+	buf bytes.Buffer
 }
 
 func newResponseDumper(resp http.ResponseWriter) *responseDumper {
-	buf := new(bytes.Buffer)
 	return &responseDumper{
 		ResponseWriter: resp,
-
-		mw:  io.MultiWriter(resp, buf),
-		buf: buf,
 	}
 }
 
 func (d *responseDumper) Write(b []byte) (int, error) {
-	return d.mw.Write(b)
+	n, err := d.ResponseWriter.Write(b)
+	if err != nil {
+		return n, err
+	}
+
+	if n != len(b) {
+		return n, io.ErrShortWrite
+	}
+
+	return d.buf.Write(b)
 }
 
 func (d *responseDumper) GetResponse() string {

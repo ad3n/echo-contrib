@@ -18,11 +18,12 @@ import (
 	"sort"
 	"strconv"
 	"strings"
+	"sync"
 	"time"
 
-	"github.com/labstack/echo-contrib/v5/internal/helpers"
-	"github.com/labstack/echo/v5"
-	"github.com/labstack/echo/v5/middleware"
+	"github.com/ad3n/echo-contrib/internal/helpers"
+	"github.com/ad3n/echo/v5"
+	"github.com/ad3n/echo/v5/middleware"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/common/expfmt"
@@ -186,6 +187,12 @@ func (conf MiddlewareConfig) ToMiddleware() (echo.MiddlewareFunc, error) {
 	}
 
 	labelNames, customValuers := createLabels(conf.LabelFuncs)
+	labelValuesPool := &sync.Pool{
+		New: func() any {
+			values := make([]string, len(labelNames))
+			return &values
+		},
+	}
 
 	requestCount := prometheus.NewCounterVec(
 		conf.CounterOptsFunc(prometheus.CounterOpts{
@@ -276,11 +283,17 @@ func (conf MiddlewareConfig) ToMiddleware() (echo.MiddlewareFunc, error) {
 
 			status := conf.StatusCodeResolver(c, err)
 
-			values := make([]string, len(labelNames))
+			pooledValues := labelValuesPool.Get().(*[]string)
+			defer func() {
+				clear(*pooledValues)
+				labelValuesPool.Put(pooledValues)
+			}()
+
+			values := *pooledValues
 			values[0] = strconv.Itoa(status)
 			values[1] = c.Request().Method
 			values[2] = c.Request().Host
-			values[3] = strings.ToValidUTF8(url, "\uFFFD") // \uFFFD is � https://en.wikipedia.org/wiki/Specials_(Unicode_block)#Replacement_character
+			values[3] = strings.ToValidUTF8(url, "\uFFFD")
 			for _, cv := range customValuers {
 				values[cv.index] = cv.valueFunc(c, err)
 			}

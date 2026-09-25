@@ -8,8 +8,8 @@ package main
 import (
 	"log/slog"
 
-	"github.com/labstack/echo-contrib/v5/echoprometheus"
-	"github.com/labstack/echo/v5"
+	"github.com/ad3n/echo-contrib/echoprometheus"
+	"github.com/ad3n/echo/v5"
 )
 
 func main() {

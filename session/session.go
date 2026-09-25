@@ -6,9 +6,9 @@ package session
 import (
 	"fmt"
 
+	"github.com/ad3n/echo/v5"
+	"github.com/ad3n/echo/v5/middleware"
 	"github.com/gorilla/sessions"
-	"github.com/labstack/echo/v5"
-	"github.com/labstack/echo/v5/middleware"
 )
 
 type (

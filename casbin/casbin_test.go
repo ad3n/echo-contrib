@@ -12,9 +12,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
+	"github.com/ad3n/echo/v5"
+	"github.com/ad3n/echo/v5/middleware"
 	"github.com/casbin/casbin/v2"
-	"github.com/labstack/echo/v5"
-	"github.com/labstack/echo/v5/middleware"
 )
 
 func testRequest(t *testing.T, h echo.HandlerFunc, user string, path string, method string, code int) {

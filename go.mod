@@ -1,11 +1,11 @@
-module github.com/labstack/echo-contrib/v5
+module github.com/ad3n/echo-contrib
 
 go 1.25.0
 
 require (
+	github.com/ad3n/echo/v5 v5.0.0
 	github.com/casbin/casbin/v2 v2.135.0
 	github.com/gorilla/sessions v1.4.0
-	github.com/labstack/echo/v5 v5.0.4
 	github.com/opentracing/opentracing-go v1.2.0
 	github.com/openzipkin/zipkin-go v0.4.3
 	github.com/prometheus/client_golang v1.23.2

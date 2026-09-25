@@ -9,8 +9,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/ad3n/echo/v5"
 	"github.com/gorilla/sessions"
-	"github.com/labstack/echo/v5"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -1,6 +1,6 @@
 # Echo Community Contribution middlewares
 
- [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](http://godoc.org/github.com/labstack/echo-contrib)
+ [![GoDoc](http://img.shields.io/badge/go-documentation-blue.svg?style=flat-square)](https://pkg.go.dev/github.com/ad3n/echo-contrib)
  [![Codecov](https://img.shields.io/codecov/c/github/labstack/echo-contrib.svg?style=flat-square)](https://codecov.io/gh/labstack/echo-contrib)
  [![Twitter](https://img.shields.io/badge/twitter-@labstack-55acee.svg?style=flat-square)](https://twitter.com/labstack)
 
@@ -15,24 +15,15 @@
 
 ## Usage
 
-For Echo `v5` support:
+For use with [`github.com/ad3n/echo/v5`](https://github.com/ad3n/echo):
 ```bash
-go get github.com/labstack/echo-contrib/v5
+go get github.com/ad3n/echo-contrib
 ```
 
 ## Versioning
 
-This repository does not use semantic versioning. MAJOR version tracks which Echo version should be used. MINOR version
-tracks API changes (possibly backwards incompatible, which is a very rare occasion), and a PATCH version is incremented for fixes.
-
-> **Always add at least one integration test in your project.**
-
-Minimal needed Echo versions:
-
-* `v5.x.y` needs Echo `v5.0.0+`, use `go get github.com/labstack/echo-contrib/v5@latest`
-* `v0.18.0` needs Echo `v4.15.0+`, use `go get github.com/labstack/echo-contrib@v0`
-
-For `v0.x.y` releases the code is located in `v4` branch.
+This fork uses the module path `github.com/ad3n/echo-contrib` without a major-version suffix
+and depends on `github.com/ad3n/echo/v5`. The exact Echo version is pinned in `go.mod`.
 
 # Supported Go version
 

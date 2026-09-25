@@ -9,7 +9,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/labstack/echo/v5"
+	"github.com/ad3n/echo/v5"
 )
 
 func TestPProfRegisterDefaualtPrefix(t *testing.T) {
